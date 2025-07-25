@@ -24,7 +24,41 @@ Authorization: Bearer <token>
 Accept: application/json
 
 ### API Endpoints & Examples ##
-I have provided the postman collection pleae find it in folder with the name of Laravel-Multi-Tenant-SaaS-API.postman_collection
+/api/register  [POST]
+{
+  "name": "Rajni",
+  "email": "rajni@example.com",
+  "password": "password123",
+  "password_confirmation": "password123"
+}
+
+/api/login [POST]
+{
+  "email": "rajni@example.com",
+  "password": "password123"
+}
+
+/api/logout [POST]
+
+/api/companies  [POST]
+{
+  "name": "CompanyTest",
+  "address": "Jaipur, Rajasthan",
+  "industry": "Serivce-commerce"
+}
+
+/api/companies  [GET]
+
+/api/companies/1   [PUT]
+{
+  "name": "Updated Company Name",
+  "address": "Bangalore"
+}
+
+/api/companies/1  [DELETE]
+
+/api/companies/2/set-active [POST]
+
 
 ####  Multi-Tenant Logic & Data Scoping
 Key Concepts:
